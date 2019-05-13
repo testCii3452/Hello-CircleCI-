@@ -2,13 +2,12 @@ version: 2
 jobs:
   one:
     docker:
-      - image: circleci/nodes:4.8.2
+      - image: debian:stretch
     steps:
       - checkout
   two:
    docker:
-      - image: circleci/nodes:4.8.2
-
+      - image: debian:stretch
     steps:
       - checkout
       
