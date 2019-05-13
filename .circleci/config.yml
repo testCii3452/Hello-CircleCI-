@@ -2,12 +2,12 @@ version: 2
 jobs:
   one:
     docker:
-      - image: debian:stretch
+      - image: circleci/ruby:2.4.1
     steps:
       - checkout
   two:
    docker:
-      - image: debian:stretch
+      - image: circleci/ruby:2.4.1
     steps:
       - checkout
       
