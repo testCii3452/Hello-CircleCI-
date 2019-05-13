@@ -10,11 +10,7 @@ jobs:
       - run:
           name: Greeting
           command: echo Hello, world.
-
-      - run:
-          name: Print the Current Time
-          command: date
-  one
+  two:
    docker:
       - image: debian:stretch
 
@@ -22,8 +18,8 @@ jobs:
       - checkout
 
       - run:
-          name: Greeting
-          command: echo a more familiar hello.
+          name: Print the Current Time
+          command: date
           
 workflows:
 version: 2
